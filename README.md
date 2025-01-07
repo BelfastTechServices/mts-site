@@ -40,7 +40,7 @@ quit
 
 ```
 sudo rm -rf latest.tar.gz wordpress /var/www/mts-ssl
-wget https://wordpress.org/latest.tar.gz; tar -xzvf latest.tar.gz
+wget https://wordpress.org/latest.tar.gz; tar -xzvf latest.tar.gz; rm latest.tar.gz
 nano wordpress/wp-config-sample.php; cp wordpress/wp-config-sample.php wordpress/wp-config.php
 sudo cp -r wordpress/ /var/www/mts-ssl; sudo chown www-data -R /var/www
 sudo cp -r mts-site/mts/.well-known/ /var/www/mts-ssl/.well-known; sudo chown www-data -R /var/www
